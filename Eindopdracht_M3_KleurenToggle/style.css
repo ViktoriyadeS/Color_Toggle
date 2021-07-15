@@ -1,0 +1,70 @@
+body {
+  background-color: gray;
+}
+.btn-toggle-nav {
+  width: 60px;
+  height: 60px;
+  background-image: url("images/hamburger_menu.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.nav-menu {
+  list-style: none;
+  margin:0;
+  padding-left: 0;
+  width: 220px;
+  visibility: hidden;
+  opacity:0;
+  transition: all 0.3s ease-in;
+}
+.nav-menu li {
+  padding: 25px;
+}
+.nav-menu li:first-child {
+  border-top-right-radius: 10px;
+}
+.nav-menu li:last-child{
+  border-bottom-right-radius: 10px;
+}
+.nav-menu:not(:hover){
+  transform: translateX(-165px);
+  transition: transform .5s ease-in-out;
+}
+.main-background {
+  background-color: gray;
+}
+.main-background input, .main-background label{
+  cursor: pointer;
+}
+.red-background {
+  background-color: red;
+}
+.red-background input, .red-background label{
+  cursor: pointer;
+}
+.blue-background {
+  background-color: blue;
+}
+.blue-background input, .blue-background label{
+  cursor: pointer;
+}
+.yellow-background {
+  background-color: yellow;
+}
+.yellow-background input, .yellow-background label{
+  cursor: pointer;
+}
+.purple-background {
+  background-color: purple;
+}
+.purple-background input, .purple-background label{
+  cursor: pointer;
+}
+.name-of-color p {
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
